@@ -7,6 +7,7 @@
 <body>
     <h1> Doctor Checkup Appointment </h1>
     <p> Fill in these neccesary information for a checkup appointment with <em><b>Dr.Samarth</b></em></p>
+    <form>
     <fieldset>
         <legend> Personal Information </legend>
         <label> Patient's name: </label>
@@ -14,7 +15,22 @@
         <label> Date of Birth: </label>
         <input type="date"><br><br>
         <label> Patient's ID: </label>
-        <input type="password"placeholder="Enter your ID"
+        <input type="password"placeholder="Enter your ID"<br><br>
     </fieldset>
+    <fieldset>
+        <label> Your Doctor: </label>
+        <select>
+            <option>--Select your doctor--</option>
+            <option value="ray"> Dr.Ray - Cardiology</option>
+            <option value="lee"> Dr.Lee - Eye Specialist</option>
+        </select><br><br>
+        <label> Reason for Checkup: </label>
+        <input type="radio"name="illness">Fever
+        <input type="radio" name="illness">Cold
+        <input type="radio" name="illness">Checkup
+        <input type="radio"name="illness">Toothpain<br><br>
+        
+    </fieldset>
+    </form>
 </body>
 </html>
